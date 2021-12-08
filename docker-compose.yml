@@ -1,6 +1,6 @@
 version: '2'
 services:
-  odoo12e:
+  odoo14e:
     image: shabanash/odoo14-enterprise
     user: root
     ports:
