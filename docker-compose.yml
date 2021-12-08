@@ -7,11 +7,15 @@ services:
       - "14001:8069"
       - "14002:8072" # live chat
     tty: true
+    command: --
     environment:
       - HOST=192.168.10.44
       - USER=odoo14e
       - PASSWORD=odoo14e
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
     restart: always             # run as a service
