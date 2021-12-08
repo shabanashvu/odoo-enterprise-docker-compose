@@ -1,7 +1,7 @@
 version: '2'
 services:
   odoo12e:
-    image: shabanash/odoo12-enterprise
+    image: shabanash/odoo14-enterprise
     user: root
     ports:
       - "12001:8069"
@@ -9,8 +9,8 @@ services:
     tty: true
     environment:
       - HOST=192.168.10.44
-      - USER=odoo12e
-      - PASSWORD=odoo12e
+      - USER=odoo14e
+      - PASSWORD=odoo14e
     volumes:
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
