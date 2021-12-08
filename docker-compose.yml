@@ -3,7 +3,6 @@ services:
   odoo12e:
     image: shabanash/odoo12-enterprise
     user: root
-    depends_on:
     ports:
       - "12001:8069"
       - "12002:8072" # live chat
