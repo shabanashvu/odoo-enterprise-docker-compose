@@ -4,8 +4,8 @@ services:
     image: shabanash/odoo14-enterprise
     user: root
     ports:
-      - "12001:8069"
-      - "12002:8072" # live chat
+      - "14001:8069"
+      - "14002:8072" # live chat
     tty: true
     environment:
       - HOST=192.168.10.44
