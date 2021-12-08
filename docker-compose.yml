@@ -7,7 +7,6 @@ services:
       - "12001:8069"
       - "12002:8072" # live chat
     tty: true
-    command: --
     environment:
       - HOST=192.168.10.44
       - USER=odoo12e
