@@ -1,7 +1,7 @@
 version: '2'
 services:
   odoo14e:
-    image: shabanash/odoo14-enterprise
+    image: shabanash/odoo15-enterprise
     user: root
     ports:
       - "15001:8069"
