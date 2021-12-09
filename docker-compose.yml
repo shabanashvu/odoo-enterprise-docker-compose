@@ -10,8 +10,8 @@ services:
     command: --
     environment:
       - HOST=192.168.10.44
-      - USER=odoo14e
-      - PASSWORD=odoo14e
+      - USER=odoo15e
+      - PASSWORD=odoo15e
     volumes:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
